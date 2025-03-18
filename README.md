@@ -1,4 +1,20 @@
 # interpretable-ml-notes-w-ai
+The document is about linear regression models and their interpretation. It explains that linear regression predicts a target variable as a weighted sum of input features, making interpretation straightforward due to its linearity. The weights represent the influence of each feature on the prediction.
+
+Key points covered:
+
+*   **Model Explanation**: The equation for linear regression, including coefficients, intercept, and error term.
+*   **Advantages**: Simple estimation and easy-to-understand interpretation of feature weights.
+*   **Assumptions**: Linearity, normality, homoscedasticity (constant variance), independence of instances, fixed features, and absence of multicollinearity.
+*   **Interpretation of Weights**: How to interpret weights for numerical, binary, and categorical features.
+*   **R-squared**: Explains how to measure the proportion of variance in the target variable explained by the model, including adjusted R-squared to account for the number of features.
+*   **Feature Importance**: Measured by the absolute value of the t-statistic.
+*   **Weight and effect plots**: Visualizations for understanding the impact of features, including the importance of feature scaling.
+*   **Effect plots**: Illustrate the distribution of feature effects in the dataset.
+*   **Individual Predictions**: Explaining individual predictions by computing feature effects for a specific instance.
+
+
+
 
 
 Okay, I will explain how Generalized Linear Models (GLMs) and interaction terms work, both intuitively and mathematically, based on the provided document.
@@ -103,3 +119,11 @@ By including the interaction term, the model can learn different slopes for the 
 
 Citations:
 [1] https://christophm.github.io/interpretable-ml-book/extend-lm.html
+
+
+
+# NN
+Feature visualization and network dissection are methods used to interpret what convolutional neural networks (CNNs) learn. Feature visualization involves finding inputs that maximize the activation of specific units (neurons, channels, or layers) in the network, often resulting in abstract images that represent learned features like edges, textures, or objects. Network dissection quantifies the interpretability of CNN units by linking them to human-labeled concepts, measuring how well the activated areas of CNN channels align with these concepts using the Intersection over Union (IoU) score. While feature visualization provides insights into the workings of neural networks and can be combined with feature attribution methods, it also has limitations, such as many images not being interpretable and the sheer number of units to examine. Network dissection requires extra datasets labeled with human concepts.
+
+Citations:
+[1] https://christophm.github.io/interpretable-ml-book/cnn-features.html
